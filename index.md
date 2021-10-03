@@ -27,7 +27,7 @@ about_button_label: Github Page # the label on the button
 # optional portfolio section ------------------------------------------
 
 # By declaring these variables, you can include a portfolio showcasing your work and organize your portfolio's items into a custom layout, all without adding any CSS. In addition, you must 1) create an HTML file in the_includes folder for each project with the text you'd like to display, and 2) create a YAML file in the _data folder describing the order in which each project should be shown and categorized. See `/includes/example.html` and `/_data/work.yml` for examples.
-
+ 
 portfolio: projects # the heading for your portfolio and title of your YAML file
 portfolio_description: you can include a portfolio showcasing your work and organize your portfolio's items into a custom layout, all without adding any CSS. # a description to be desplayed below the heading and above the content
 
@@ -59,6 +59,3 @@ I've been interested in Computer Science and Cyber Security since I was 12. Comp
 ### Contact
 - mdgrav@protonmail.com
 - michael.graves@utdallas.edu  
-
-
-# **hello** is adapted from [Twenty](https://html5up.net/twenty), a responsive, mobile-friendly theme by HTML5 Up.
