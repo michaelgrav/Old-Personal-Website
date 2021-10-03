@@ -41,11 +41,11 @@ cta_button_label: contact # the label on the button
 
 ---			
 [//]: # (write a bit about yourself here)
-### why **hello**?  
+### About me  
 
-### **hello** has a simple goal: to make GitHub Pages accessible to everyone.  
+### I am currently pursuing my Bachelor's of Science in Computer Science from UT Dallas.  
 
-I am currently pursuing my Bachelor's of Science in Computer Science from UT Dallas. I've been interested in Computer Science and Cyber Security since I was 12. Computers always fascinated me and I had to know how they worked. This curiosity blossomed into a serious interest and career opportunity for me. I've taken numerous Java classes, game development classes, and work on my own projects out of school. I've hacked my phone, laptop, and other personal devices. From swapping operating systems on my devices to making my own software, I'm always open to new experiences and opportunities to grow my knowledge in the industry.
+I've been interested in Computer Science and Cyber Security since I was 12. Computers always fascinated me and I had to know how they worked. This curiosity blossomed into a serious interest and career opportunity for me. I've taken numerous Java classes, game development classes, and work on my own projects out of school. I've hacked my phone, laptop, and other personal devices. From swapping operating systems on my devices to making my own software, I'm always open to new experiences and opportunities to grow my knowledge in the industry.
 
 Programming Experience
 Languages: Java, Python, Lua
