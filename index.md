@@ -56,7 +56,7 @@ I've been interested in Computer Science and Cyber Security since I was 12. Comp
 - Racket ball and Billiards
 - Hackathons (HackDFW)
 
-Michael Graves
+
 - mdgrav@protonmail.com
 - michael.graves@utdallas.edu  
 
