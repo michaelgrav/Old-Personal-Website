@@ -4,7 +4,7 @@
 title: HackMichael
 author: Michael Graves
 description: > 
-  A minimalist template for designing a personal GitHub Pages website - without typing a single line of code.
+  A personal website to showcase my projects and ideas
 baseurl: ""
 
 plugins:
