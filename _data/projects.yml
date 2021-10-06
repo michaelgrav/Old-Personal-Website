@@ -1,7 +1,7 @@
 projects:
   - category: Games
     items:
-      - item: example.html
+      - item: roguelike.html
 #  - category: Los Angeles
  #   items:
   #    - item: example.html
