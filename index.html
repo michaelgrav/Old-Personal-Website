@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="syles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8"x>
     <style>
     body { 
@@ -15,6 +16,31 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
     <title>HackMichael</title>
 </head>
+
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="experience.html">Experience</a>
+    <a href="projects.html">Portfolio</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    
+
+
 <body class="text-center">
     <div class="container-fluid">
         <img src="Me.jpg" class="mx-auto d-block img-fluid rounded" alt="A picture of me">
@@ -38,6 +64,8 @@
         <a href="https://www.linkedin.com/in/michaelgrav/">linkedin</a><br>
         <a href="https://github.com/nsx00">github</a><br>
         <br>
+
+
         <hr style="height:2px;border-width:0;color:blak;background-color:black">
         <h1>Projects and Experience!</h1>
         <p>To view my projects or experience, click here!</p>
