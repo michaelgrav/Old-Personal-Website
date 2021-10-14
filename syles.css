@@ -8,6 +8,11 @@ footer {
     text-align: center;
 }
 
+#MainPicture {
+  float: left;
+  margin: 0 0 0 15px;
+}
+
 h1 {
   font-family: 'Arvo', Georgia, Times, serif;
   font-size: 59px;
