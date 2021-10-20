@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" name="viewport" conetent="width=device-width, initial-scale=1.0">
+		<title>HackMichael</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	
+	<body>
+		<section class="subheader">
+			<nav>
+				<!-- <a href="index.html"><img src="images/hacklogo.png" alt="logo image" height=78px></a> --->
+				<div class="nav-links" id="navLinks">
+					<i class="fa fa-times" onclick="hideMenu()"></i>
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="about.html">ABOUT</a></li>
+						<li><a href="404.html">PROJECTS</a></li>
+						<li><a href="404.html">EXPERIENCE</a></li>
+						<li><a href="404.html">CONTACT</a></li>
+					</ul>
+				</div>
+				<i class="fa fa-bars" onclick="showMenu()"></i>
+			</nav>
+		</section>
+		
+		<!--- About --->
+		<section class="about">
+			<h1>About Me!</h1>
+			<div class="row">
+				<div class="about-col">
+					<h3>Here's Some Info About Me And What I Do</h3>
+					<p>I've been interested in Software Engineering and Cyber Security since I was 12. 
+						<br><br>
+						Computers always fascinated me and I had to know how they worked. This curiosity blossomed into a serious interest and career opportunity for me. <br>I've taken numerous Java classes, game development classes, and work on my own projects out of school. I've hacked my phone, laptop, and other personal devices. From swapping operating systems on my devices to making my own software, I'm always open to new experiences and opportunities to grow my knowledge in the industry. </p>
+				</div>
+			</div>
+		</section>
+			
+		<!-- Capmus --->
+			
+		<section class="projects">
+			<h1>Project header</h1>
+			<p>Here's Some Of My Recent Projects</p>
+			
+			<div class="row">
+				<div class="projects-col">
+					<img src="images/swars.png" alt="Image of game made in pico8">
+					<div class="layer">
+						<h3>swars</h3>
+					</div>
+				</div>
+				
+				<div class="projects-col">
+					<img src="images/treethumb.png" alt="Image of text editor made in C">
+					<div class="layer">
+						<h3>tree</h3>
+					</div>
+				</div>
+				
+				<div class="projects-col">
+					<img src="images/roguethumb.png" alt="Image of a rouglike made in python">
+					<div class="layer">
+						<h3>rougelike</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+<!-- Facilities 
+		
+<section class="facilities">
+	<h1>Our Facilities</h1>
+	<p>Facilites text</p>
+	
+	<div class="row">
+		<div class="facilities-col">
+			<img src="" alt="">
+			<h3>World Class Library</h3>
+			<p>Library Text</p>
+		</div>
+		<div class="facilities-col">
+			<img src="" alt="">
+			<h3>Largest Playground</h3>
+			<p>Playground Text</p>
+		</div>
+		<div class="facilities-col">
+			<img src="" alt="">
+			<h3>Cafeteria</h3>
+			<p>Cafeteria Text</p>
+		</div>
+	</div>
+	
+</section>
+
+--->	
+<!--- CTA --->
+		
+<section class="cta">
+	<h1>Questions? Comments? Concerns?</h1>
+	<a href="mailto:mdgrav@protonmail.com" class="hero-btn">Contact Me!</a>
+</section>
+
+<!--- Footer --->
+		
+<section class="footer">
+	<h4>Made with ❤️ by Michael Graves - This is a work in progress ☺</h4>
+	<div class="icons">
+		<a href="https://github.com/nsx00"><i class="fa fa-github"></i></a>
+		<a href="https://www.linkedin.com/in/michaelgrav/"><i class="fa fa-linkedin-square"></i></a>
+	</div>
+</section>
+
+
+<!-- Javascript for toggle menu --->
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+	
+	function showMenu() {
+			navLinks.style.right = "0";
+	}
+	
+	function hideMenu() {
+		navLinks.style.right = "-200px";
+	}
+
+	
+</script>
+		
+	</body>
+</html>
