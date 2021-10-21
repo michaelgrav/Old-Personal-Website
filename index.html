@@ -28,8 +28,9 @@
 			</nav>
 			
 			<div class="text-box">
-				<h1>Welcome To HackMichael.me!<img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="50px"></h1>
-				<p>I am currently pursuing my Bachelor's of Science in Computer Science from UT Dallas</p>
+				<span id="typed"></span>
+				<div id="typed-strings"><h1>Welcome To HackMichael.me!<img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="50px"></h1></div>
+				<br>
 				<a href="about.html" class="hero-btn">Click this to learn more</a>
 			</div>
 			
@@ -60,6 +61,14 @@
 
 	
 </script>
-		
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		<script>
+			var typed = new Typed('#typed', {
+				stringsElement: '#typed-strings',
+				typeSpeed: 100
+			});
+		</script>
+
 	</body>
 </html>
