@@ -444,7 +444,7 @@ h1 {
 }
 
 p {
-	color: #777;
+	color: black;
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 22px;
@@ -457,7 +457,7 @@ p {
 	justify-content: space-between;
 }
 
-.toolbox-col {
+.toolbox-col-stats {
 	background: #FDFD96;
 	border-radius: 10px;
 	margin-bottom: 5%;
@@ -470,9 +470,27 @@ p {
 	background-size: cover;
 	border-radius: 10px;
 	text-align: center;
-	padding: 100px 0;
+	padding: 10px 0;
 	
 }
+
+.toolbox-col-langs {
+	background: #a2cadf;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5s;
+	margin: 10px auto;
+	width: 80%;
+	background-position: center;
+	background-size: cover;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px 0;
+	
+}
+
 
 h3 {
 	text-align: center;
