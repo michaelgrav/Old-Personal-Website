@@ -407,6 +407,10 @@ h3 {
 	font-weight: 600;
 }
 
+.footer .fa {
+	font-size: 20px;
+}
+
 .icons .fa {
 	color: black;
 	margin: 0 13px;
