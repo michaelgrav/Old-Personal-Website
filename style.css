@@ -34,6 +34,16 @@ nav img {
 	width: 272px;
 }
 
+.nav-links .icons .fa {
+	color: black;
+	cursor: pointer;
+	font-size: 25px;
+	display: inline-block !important;
+	color: #B3B3B8;
+	list-style: none;
+	padding: 8px 12px;
+}
+
 .nav-links {
 	flex: 1;
 	text-align: right;
