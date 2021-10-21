@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8" name="viewport" conetent="width=device-width, initial-scale=1.0">
-		<title>About Me</title>
+		<title>My Experience</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,45 +32,56 @@
 		<!--- About --->
 		
 		<section class="about">
-			<span id="typed"><h1></h1></span>
+			<span id="typed"></span>
+			<div id="typed-strings"><h1>I'm an aspiring Software Engineer 💻</h1></div>
+		</section>
+		
+		<section class="facilities">
+			<h1>My Work Experience</h1>
 			<div class="row">
-				<div class="about-col">
-					<h3>Here's Some Info About Me And What I Do</h3>
-					<p>I am currently pursuing my Bachelor's of Science in Computer Science from UT Dallas</p><br>
-					<p>I've been interested in Computers since I was 12.<br><br>Computers always fascinated me and I had to know how they worked. This curiosity blossomed into a serious interest and career opportunity for me. <br><br>I've taken numerous Java classes, game development classes, and work on my own projects out of school. I've hacked my phone, laptop, and other personal devices. From swapping operating systems on my devices to making my own software, I'm always open to new experiences and opportunities to grow my knowledge in the industry. </p>
+				<div class="facilities-col">
+					<img src="" alt="">
+					<h2>Software Engineer Intern</h2>
+					<h3>Children's Health</h3>
+					<p>
+						Participated as a member of the Children’s Health Care Delivery Innovation Lab to transform how children receive health care with creative and innovative games and software.<br><br>
+						
+						Worked with a small team to produce an AR game to get children out of their homes and into the park. We used Figma to mockup the app, and Unity to create the app.<br><br>
+						Oct 2021 - Present
+					</p>
+				</div>
+				<div class="facilities-col">
+					<img src="" alt="">
+					<h2>Server</h2>
+					<h3>Cinemark</h3>
+					<p>Guided Guests in ordering food products and beverages. This included greeting Guests through engaging interaction, making specific menu suggestions, having strong menu knowledge, and delivering quick and timely counter service. This role was a vital link between Guests and the kitchen staff, ensuring that orders are delivered fresh, tasty, and accurate. <br><br>
+						Jun 2021 - Aug 2021</p>
+				</div>
+				<div class="facilities-col">
+					<img src="" alt="">
+					<h2>File Clerk</h2>
+					<h3>Wholesale Haulers</h3>
+					<p>Filed away papers and answered the company phone. <br><br>
+						Jun 2018 - Jun 2021</p>
+				</div>
+			</div>
+			
+		</section>
+			
+		<!-- Campus --->
+		<section class="toolbox">
+			<h1>My Toolbox 🧰</h1>
+			<p>My Skills and Tools</p>
+
+			<div class="row">
+				<div class="toolbox-col">
+					<h3>This Page Isn't Complete Yet!</h3>
+					<p>I'm working on this website whenever I get free time, 
+						please excuse this page as it hasn't been completed</p>
 				</div>
 			</div>
 		</section>
-			
-		<!-- Capmus --->
-			
-		<section class="projects">
-			<h1>Projects</h1>
-			<p>Here's Some Of My Recent Projects</p>
-			
-			<div class="row">
-				<div class="projects-col">
-					<img src="images/swarssimple.png" alt="Image of game made in pico8">
-					<div class="layer">
-						<h3><a href="https://github.com/nsx00/Galaxy-Battles" class="hero-btn">galaxy battles</a></h3>
-					</div>
-				</div>
-				
-				<div class="projects-col">
-					<img src="images/tree.png" alt="Image of text editor made in C">
-					<div class="layer">
-						<h3><a href="https://github.com/nsx00/tree" class="hero-btn">tree</a></h3>
-					</div>
-				</div>
-				
-				<div class="projects-col">
-					<img src="images/roguelikesimple.png" alt="Image of a rouglike made in python">
-					<div class="layer">
-						<h3><a href="https://github.com/nsx00/PythonRoguelike" class="hero-btn">rougelike</a></h3>
-					</div>
-				</div>
-			</div>
-		</section>
+
 		
 <!-- Facilities 
 		
@@ -134,12 +145,10 @@
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 		
 		<script>
-				var typed = new Typed('#typed', {
-					strings: [" ", "I am a Developer ^250", "I am a Student ^250", "I am a Musician ^250"],
-					typeSpeed: 75,
-					backSpeed: 75,
-					loop: true
-				});
+			var typed = new Typed('#typed', {
+				stringsElement: '#typed-strings',
+				typeSpeed: 75
+			});
 		</script>
 		
 	</body>
