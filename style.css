@@ -204,6 +204,10 @@ p {
 	color: black;
 }
 
+.about-col p {
+	color: black !important;
+}
+
 h3 {
 	text-align: center;
 	font-weight: 600;
