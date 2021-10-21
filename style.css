@@ -7,6 +7,7 @@
 
 #typed {
 	font-size: 62px;
+	text-align: center;
 }
 
 .typed-cursor {
@@ -151,9 +152,19 @@ nav .fa {
 	padding-top: 100px;
 }
 
+#typed {
+	font-size: 62px;
+	text-align: center !important;
+}
+
+.typed-cursor {
+	font-size: 62px;
+}
+
 h1 {
 	font-size: 36px;
 	font-weight: 600;
+	text-align: center  !important;
 }
 
 p {

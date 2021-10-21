@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8" name="viewport" conetent="width=device-width, initial-scale=1.0">
-		<title>HackMichael</title>
+		<title>About Me</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,8 +29,9 @@
 		</section>
 		
 		<!--- About --->
+		
 		<section class="about">
-			<h1>About Me!</h1>
+			<span id="typed"><h1></h1></span>
 			<div class="row">
 				<div class="about-col">
 					<h3>Here's Some Info About Me And What I Do</h3>
@@ -127,10 +128,19 @@
 	
 	function hideMenu() {
 		navLinks.style.right = "-200px";
-	}
-
-	
+	}	
 </script>
+		
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		
+		<script>
+				var typed = new Typed('#typed', {
+					strings: [" ", "I am a Developer ^250", "I am a Student ^250", "I am a Musician ^250"],
+					typeSpeed: 75,
+					backSpeed: 75,
+					loop: true
+				});
+		</script>
 		
 	</body>
 </html>
