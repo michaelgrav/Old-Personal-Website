@@ -466,6 +466,10 @@ h1 {
 	font-weight: 600;
 }
 
+h4 {
+	color: black !important;
+}
+
 p {
 	font-size: 14px;
 	font-weight: 300;
