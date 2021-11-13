@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8" name="viewport" conetent="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>My Experience</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-	
+
 	<body class="experiencebackground">
 		<section class="subheader">
 			<nav>
@@ -20,6 +20,7 @@
 						<li><a href="index.html">.home()</a></li>
 						<li><a href="about.html">.aboutMe()</a></li>
 						<li><a href="experience.html">.experienceAndSkills()</a></li>
+						<li><a href="404.html">.blog()</a></li>
 						<div class="icons"><li><a href="https://github.com/nsx00"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/michaelgrav/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li></div>
 
@@ -28,15 +29,15 @@
 				<i class="fa fa-bars" onclick="showMenu()"></i>
 			</nav>
 		</section>
-		
+
 		<!--- About --->
-		
+
 		<section class="about">
 			<span id="typed"></span>
 			<div id="typed-strings"><h1>I'm an aspiring Software Engineer <i class="fa fa-terminal" aria-hidden="true"></i>
 </h1></div>
 		</section>
-		
+
 		<section class="facilities">
 			<h1>My Work Experience 💻</h1>
 			<div class="row">
@@ -46,7 +47,7 @@
 					<h3 class="worktitle">Children's Health</h3>
 					<p>
 						Participated as a member of the Children’s Health Care Delivery Innovation Lab to transform how children receive health care with creative and innovative games and software.<br><br>
-						
+
 						Worked with a small team to produce an AR game to get children out of their homes and into the park. We used Figma to mockup the app, and Unity to create the app.<br><br>
 						Oct 2021 - Oct 2021
 					</p>
@@ -66,14 +67,14 @@
 						Jun 2018 - Jun 2021</p>
 				</div>
 			</div>
-			
+
 		</section>
-			
+
 		<!-- Campus --->
 		<section class="toolbox">
 			<h1>My Toolbox 🧰</h1>
 			<p>My Skills and Tools</p>
-			
+
 			<div class="row">
 				<div class="toolbox-col-langs">
 					<h3>My Languages!</h3>
@@ -97,13 +98,13 @@
 			</div>
 		</section>
 
-		
-<!-- Facilities 
-		
+
+<!-- Facilities
+
 <section class="facilities">
 	<h1>Our Facilities</h1>
 	<p>Facilites text</p>
-	
+
 	<div class="row">
 		<div class="facilities-col">
 			<img src="" alt="">
@@ -121,19 +122,19 @@
 			<p>Cafeteria Text</p>
 		</div>
 	</div>
-	
+
 </section>
 
---->	
+--->
 <!--- CTA --->
-		
+
 <section class="cta">
 	<h1>Questions? Comments? Concerns?</h1>
 	<a href="mailto:mdgrav@protonmail.com" class="hero-btn">Contact Me!</a>
 </section>
 
 <!--- Footer --->
-		
+
 <section class="footer">
 	<h4><i class="fa fa-code" aria-hidden="true"></i> with ❤️ by Michael Graves</h4>
 	<div class="icons">
@@ -145,26 +146,26 @@
 
 <!-- Javascript for toggle menu --->
 <script>
-	
+
 	var navLinks = document.getElementById("navLinks");
-	
+
 	function showMenu() {
 			navLinks.style.right = "0";
 	}
-	
+
 	function hideMenu() {
 		navLinks.style.right = "-200px";
-	}	
+	}
 </script>
-		
+
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-		
+
 		<script>
 			var typed = new Typed('#typed', {
 				stringsElement: '#typed-strings',
 				typeSpeed: 75
 			});
 		</script>
-		
+
 	</body>
 </html>

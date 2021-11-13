@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8" name="viewport" conetent="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>About Me</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-	
+
 	<body class="bluebackground">
 		<section class="subheader">
 			<nav>
@@ -20,6 +20,7 @@
 						<li><a href="index.html">.home()</a></li>
 						<li><a href="about.html">.aboutMe()</a></li>
 						<li><a href="experience.html">.experienceAndSkills()</a></li>
+						<li><a href="404.html">.blog()</a></li>
 						<div class="icons"><li><a href="https://github.com/nsx00"><i class="fa fa-github" aria-hidden="true"></i></a></li>
 						<li><a href="https://www.linkedin.com/in/michaelgrav/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li></div>
 
@@ -28,28 +29,28 @@
 				<i class="fa fa-bars" onclick="showMenu()"></i>
 			</nav>
 		</section>
-		
+
 		<!--- About --->
-		
+
 		<section class="about">
 			<span id="typed"><h1></h1></span>
 			<div class="row">
 				<div class="about-col">
 					<h3>🎵 Here's Some Info About Me And What I Do 🏫</h3>
 					<p>I am currently pursuing my Bachelor's of Science in Computer Science from UT Dallas</p><br>
-					<p>I've been interested in Computers since I was 12, they always fascinated me and I had to know how they worked.  <br><br>This curiosity blossomed into a serious interest and career opportunity for me. I've taken numerous Java classes, game development classes, and work on my own projects out of school. I've hacked my phone, laptop, and other personal devices. From swapping operating systems on my devices to making my own software, I'm always open to new experiences and opportunities to grow my knowledge in the industry.<br><br> 
-						
+					<p>I've been interested in Computers since I was 12, they always fascinated me and I had to know how they worked.  <br><br>This curiosity blossomed into a serious interest and career opportunity for me. I've taken numerous Java classes, game development classes, and work on my own projects out of school. I've hacked my phone, laptop, and other personal devices. From swapping operating systems on my devices to making my own software, I'm always open to new experiences and opportunities to grow my knowledge in the industry.<br><br>
+
 						I play trombone, euphonium, and trumpet in my free time! I enjoy making games and playing 8ball in my free time as well!</p>
 				</div>
 			</div>
 		</section>
-			
+
 		<!-- Capmus --->
-			
+
 		<section class="projects">
 			<h1>Projects 👾</h1>
 			<p>Here's Some Of My Recent Projects</p>
-			
+
 			<div class="row">
 				<div class="projects-col">
 					<img src="images/swarssimple.png" alt="Image of game made in pico8">
@@ -57,14 +58,14 @@
 						<h3><a href="https://github.com/nsx00/Galaxy-Battles" class="hero-btn">galaxy battles</a></h3>
 					</div>
 				</div>
-				
+
 				<div class="projects-col">
 					<img src="images/tree.png" alt="Image of text editor made in C">
 					<div class="layer">
 						<h3><a href="https://github.com/nsx00/tree" class="hero-btn">tree</a></h3>
 					</div>
 				</div>
-				
+
 				<div class="projects-col">
 					<img src="images/roguelikesimple.png" alt="Image of a rouglike made in python">
 					<div class="layer">
@@ -73,13 +74,13 @@
 				</div>
 			</div>
 		</section>
-		
-<!-- Facilities 
-		
+
+<!-- Facilities
+
 <section class="facilities">
 	<h1>Our Facilities</h1>
 	<p>Facilites text</p>
-	
+
 	<div class="row">
 		<div class="facilities-col">
 			<img src="" alt="">
@@ -97,19 +98,19 @@
 			<p>Cafeteria Text</p>
 		</div>
 	</div>
-	
+
 </section>
 
---->	
+--->
 <!--- CTA --->
-		
+
 <section class="cta">
 	<h1>Questions? Comments? Concerns?</h1>
 	<a href="mailto:mdgrav@protonmail.com" class="hero-btn">Contact Me!</a>
 </section>
 
 <!--- Footer --->
-		
+
 <section class="footer">
 	<h4><i class="fa fa-code" aria-hidden="true"></i> with ❤️ by Michael Graves</h4>
 	<div class="icons">
@@ -121,20 +122,20 @@
 
 <!-- Javascript for toggle menu --->
 <script>
-	
+
 	var navLinks = document.getElementById("navLinks");
-	
+
 	function showMenu() {
 			navLinks.style.right = "0";
 	}
-	
+
 	function hideMenu() {
 		navLinks.style.right = "-200px";
-	}	
+	}
 </script>
-		
+
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-		
+
 		<script>
 				var typed = new Typed('#typed', {
 					strings: [" ", "I am a Developer ^250", "I am a Student ^250", "I am a Musician ^250"],
@@ -143,6 +144,6 @@
 					loop: true
 				});
 		</script>
-		
+
 	</body>
 </html>

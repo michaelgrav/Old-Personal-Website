@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8" name="viewport" conetent="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>404</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;600;700&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
-	
-	<body>
+
+	<body class="bluebackground">
 		<section class="subheader">
 			<nav>
 				<!-- <a href="index.html"><img src="images/hacklogo.png" alt="logo image" height=78px></a> --->
@@ -20,6 +20,7 @@
 						<li><a href="index.html">.home()</a></li>
 						<li><a href="about.html">.about()</a></li>
 						<li><a href="404.html">.experience()</a></li>
+						<li><a href="404.html">.blog()</a></li>
 						<div class="icons"><li><a href="https://github.com/nsx00"><i class="fa fa-github"></i></a></li>
 							<li><a href="https://www.linkedin.com/in/michaelgrav/"><i class="fa fa-linkedin-square"></i></a></li></div>
 
@@ -28,18 +29,18 @@
 				<i class="fa fa-bars" onclick="showMenu()"></i>
 			</nav>
 		</section>
-		
+
 		<section class="error">
 			<h1>Error 404!</h1>
 			<div class="row">
 				<div class="error-col">
 					<h3>This Page Isn't Complete Yet!</h3>
-					<p>I'm working on this website whenever I get free time, 
+					<p>I'm working on this website whenever I get free time,
 						please excuse this page as it hasn't been completed</p>
 				</div>
 			</div>
 		</section>
-		
+
 		<section class="footer">
 			<h4>Made with ❤️ by Michael Graves - This is a work in progress ☺</h4>
 			<div class="icons">
@@ -47,17 +48,17 @@
 				<a href="https://www.linkedin.com/in/michaelgrav/"><i class="fa fa-linkedin-square"></i></a>
 			</div>
 		</section>
-		
-		
+
+
 		<!-- Javascript for toggle menu --->
 		<script>
-			
+
 			var navLinks = document.getElementById("navLinks");
-			
+
 			function showMenu() {
 				navLinks.style.right = "0";
 			}
-			
+
 			function hideMenu() {
 				navLinks.style.right = "-200px";
 			}
