@@ -48,7 +48,7 @@ nav img {
 .nav-links {
 	flex: 1;
 	text-align: right;
-	
+
 }
 
 .nav-links ul li {
@@ -115,22 +115,22 @@ nav img {
 	border: 1px solid #B3B3B8;
 	background: rgba(20, 23, 34, 1);
 	transition: 1s;
-	
+
 }
 
 nav .fa {
 	display: none;
 }
 
-@media(max-width: 700px) {
+@media only screen and (max-width: 700px) {
 	.text-box h1 {
 		font-size: 20px;
 	}
-	
+
 	.nav-links ul li {
 		display: block;
 	}
-	
+
 	.nav-links{
 		position: absolute;
 		background: white;
@@ -150,7 +150,7 @@ nav .fa {
 		font-size: 22px;
 		cursor: pointer;
 	}
-	
+
 	.nav-links ul {
 		padding: 30px;
 	}
@@ -266,7 +266,7 @@ p {
 	border-radius: 10px;
 	text-align: center;
 	padding: 100px 0;
-	
+
 }
 
 h3 {
@@ -503,7 +503,7 @@ p {
 	border-radius: 10px;
 	text-align: center;
 	padding: 10px 0;
-	
+
 }
 
 .toolbox-col-langs {
@@ -521,7 +521,7 @@ p {
 	text-align: center;
 	padding: 10px 0;
 	color: black !important;
-	
+
 }
 
 .toolbox-col-langs h4 {
