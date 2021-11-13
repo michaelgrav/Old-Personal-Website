@@ -266,7 +266,11 @@ p {
 	border-radius: 10px;
 	text-align: center;
 	padding: 100px 0;
+	color: black !important;
+}
 
+.error-col p {
+	color: black !important;
 }
 
 h3 {
