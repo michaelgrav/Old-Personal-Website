@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>About Me</title>
+		<title>Blog</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,75 +33,67 @@
 		<!--- About --->
 
 		<section class="about">
-			<span id="typed"><h1></h1></span>
+		<span id="typed"><h1></h1></span>
 			<div class="row">
 				<div class="about-col">
-					<h3>🎵 Here's Some Info About Me And What I Do 🏫</h3>
-					<p>I am currently pursuing my Bachelor's of Science in Computer Science from UT Dallas</p><br>
-					<p>I've been interested in Computers since I was 12, they always fascinated me and I had to know how they worked.  <br><br>This curiosity blossomed into a serious interest and career opportunity for me. I've taken numerous Java classes, game development classes, and work on my own projects out of school. I've hacked my phone, laptop, and other personal devices. From swapping operating systems on my devices to making my own software, I'm always open to new experiences and opportunities to grow my knowledge in the industry.<br><br>
+					<h3>Novemeber 16th, 2021 (aka, the big boom)</h3>
+							<p>Hey! Welcome to my new blog! This idea was inspired by the fact that I wanted to make my own little slice of
+								the internet.This first blog post is going to focus on the Pico-8 game I’ve been making on and off for the past
+								 couple of weeks. I wanted to show you guys some of the findings, challenges, and ideas that I’ve seen while
+								 working on this Pico game! Let’s dive in! </p>
 
-						I play trombone, euphonium, and trumpet in my free time! I enjoy making games and playing 8ball in my free time as well!</p>
+								 <br>
+								 <br>
+
+								 <p> I want to start this by explaining what the Pico-8 game engine is. Pico defines itself as a
+								 “fantasy console for making, sharing, and playing tiny games and other computer programs.”
+								 What is a fantasy console? Good question! A fantasy console is basically a console that never
+								 existed. There’s no actual hardware! Pico provides everything you need to make a game with some
+								 special limitations that makes game development on Pico super fun! </p>
+
+								 <br>
+								 <br>
+
+								 <img src="images/blog-images/pico8/welcome_screen.png">
+								 <p>This is what you get when you load up Pico-8</p>
+
+								 <br>
+								 <br>
+
+								 <p>I decided to make a simple game to get some experience with this console because I thought
+									 the concept was super cool! My game (right now) is called SWars. It's… inspired by the
+									 popular movie series Star Wars, I’m sure you’ve heard of it before. </p>
+									 <br>
+									 <br>
+									<p> The first challenge I had was getting the sprite to move. Luckily, Pico makes this super easy. I
+									 made an x and y variable for the player an added some If statements to handle button presses	</p>
+
+								<br>
+								<br>
+
+								<img src="images/blog-images/pico8/button_mappings.png">
+								<p>One of the cool things about Pico is that it proves these buttons that you can get
+									by pressing the shift key and a letter on the keyboard. </p>
+
+								<br>
+								<br>
+
+								<p> Then, in the _draw() function I updated the sprites position. </p>
+								<img src="images/blog-images/pico8/movement_gif.gif">
+								<p> We have movement! </p>
+
+								<br>
+								<br>
+
+								<p> I’m going to end this post here, expect info on the shooting mechanics and the AI movement on the next post! </p>
+
+
+
+							</p>
 				</div>
 			</div>
 		</section>
 
-		<!-- Capmus --->
-
-		<section class="projects">
-			<h1>Projects 👾</h1>
-			<p>Here's Some Of My Recent Projects</p>
-
-			<div class="row">
-				<div class="projects-col">
-					<img src="images/swarssimple.png" alt="Image of game made in pico8">
-					<div class="layer">
-						<h3><a href="https://github.com/nsx00/Galaxy-Battles" class="hero-btn">galaxy battles</a></h3>
-					</div>
-				</div>
-
-				<div class="projects-col">
-					<img src="images/tree.png" alt="Image of text editor made in C">
-					<div class="layer">
-						<h3><a href="https://github.com/nsx00/tree" class="hero-btn">tree</a></h3>
-					</div>
-				</div>
-
-				<div class="projects-col">
-					<img src="images/roguelikesimple.png" alt="Image of a rouglike made in python">
-					<div class="layer">
-						<h3><a href="https://github.com/nsx00/PythonRoguelike" class="hero-btn">rougelike</a></h3>
-					</div>
-				</div>
-			</div>
-		</section>
-
-<!-- Facilities
-
-<section class="facilities">
-	<h1>Our Facilities</h1>
-	<p>Facilites text</p>
-
-	<div class="row">
-		<div class="facilities-col">
-			<img src="" alt="">
-			<h3>World Class Library</h3>
-			<p>Library Text</p>
-		</div>
-		<div class="facilities-col">
-			<img src="" alt="">
-			<h3>Largest Playground</h3>
-			<p>Playground Text</p>
-		</div>
-		<div class="facilities-col">
-			<img src="" alt="">
-			<h3>Cafeteria</h3>
-			<p>Cafeteria Text</p>
-		</div>
-	</div>
-
-</section>
-
---->
 <!--- CTA --->
 
 <section class="cta">
@@ -132,16 +124,16 @@
 	function hideMenu() {
 		navLinks.style.right = "-200px";
 	}
+
 </script>
 
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 		<script>
 				var typed = new Typed('#typed', {
-					strings: [" ", "I am a Developer ^250", "I am a Student ^250", "I am a Musician ^250"],
+					strings: [" ", "Welcome to my blog!"],
 					typeSpeed: 75,
 					backSpeed: 75,
-					loop: true
 				});
 		</script>
 

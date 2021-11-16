@@ -122,7 +122,7 @@ nav .fa {
 	display: none;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 480px) {
 	.text-box h1 {
 		font-size: 20px;
 	}
@@ -218,7 +218,7 @@ h3 {
 	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media(max-width: 700px) {
+@media(max-width: 480px) {
 	.row {
 		flex-direction: column;
 	}
@@ -283,7 +283,7 @@ h3 {
 	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media(max-width: 700px) {
+@media(max-width: 480px) {
 	.row {
 		flex-direction: column;
 	}
@@ -414,7 +414,7 @@ h3 {
 	padding: 0;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 480px) {
 	.cta h1 {
 		font-size: 24px;
 	}
@@ -544,7 +544,7 @@ h3 {
 	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
-@media(max-width: 700px) {
+@media(max-width: 480px) {
 	.row {
 		flex-direction: column;
 	}
