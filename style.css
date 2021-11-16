@@ -188,6 +188,10 @@ p {
 	padding: 10px;
 }
 
+p em {
+	color: black !important;
+}
+
 .row {
 	margin-top: 5%;
 	display: flex;
