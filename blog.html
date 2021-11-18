@@ -32,17 +32,103 @@
 
 		<!--- About --->
 
-		<section class="about">
-		<span id="typed"><h1></h1></span>
-			<div class="row">
-				<div class="about-col">
-					<h3>Novemeber 16th, 2021 (aka, the big boom)</h3>
+		<section class="blog">
+		  <span id="typed"><h1></h1></span>
+            <div class="row">
+				<div class="blog-col">
+					<h3>Novemeber 18th, 2021: Dynamite! (with a laserbeam)</h3>
+							<p>I’m back! Today’s post is going to focus on how I implemented the ability to shoot lasers and the VERY basic AI (I’m not sure you could even call it that right now, it only moves sideways lol). Let’s get right into it! </p>
+                    
+								 <p>So, to begin, I made two new variables in my variable page in Pico like, </p>
+                                <code>lasers = {} <br>&emsp;lastimer = 0 </code>
+                                <p>Because Pico uses lua, making objects like you do in a typical OOP is a little different. You basically have to make a collection and give the object its attributes in the collection. The lasers array is going to hold all the lasers that are currently on screen, and the lastimer variable is used to create a delay between firing two different lasers. In order to draw the lasers, I created a few methods in the draw page</p>
+                                    <code>
+                                    --function for drawing lasers<br>
+                                    &emsp;function laserdraw(o)<br>
+                                        &emsp;&emsp;spr(o.spr,o.x,o.y)<br>
+                                    &emsp;end<br><br>
+                                    &emsp;--moves bullets a little bit at a time<br>
+                                    &emsp;function laserupdate(b)<br>
+                                       &emsp;&emsp; b.x += b.dx --x moves by dx every frame<br>
+                                       &emsp;&emsp; b.y -= b.dy --y moves by dy every frame<br>
+                                       &emsp;&emsp; b.time -= 1 --if the laser has exsited for too long, delete it<br>
+                                       &emsp;&emsp; return b.time > 0 --returns true if still alive<br>
+                                    &emsp;end<br><br>
+
+                                    &emsp;--creates a new laser<br>
+                                    &emsp;function newlaser(x,y,w,h,dx,dy)<br>
+                                       &emsp;&emsp; local b = { --only use b in this function<br>
+                                       &emsp;&emsp;&emsp; x=x,y=y,dx=dx,dy=dy,<br>
+                                        &emsp;&emsp;&emsp;w=w,h=j,<br>
+                                        &emsp;&emsp;&emsp;time=60, --how long a bullet will last<br>
+                                        &emsp;&emsp;&emsp;update=laserupdate, --putting function in table<br>
+                                        &emsp;&emsp;&emsp;spr=4,draw=laserdraw<br>
+                                        &emsp;&emsp;}<br>
+                                        &emsp;&emsp;add(lasers,b)<br>
+                                        &emsp;&emsp;return b --if a laser is special we can adjust it<br>
+                                    &emsp;end<br>
+                                    </code>
+
+								 
+								 <p>I also updated my draw function to include the line</p>
+                                 <code>for o in all(lasers) do o:draw() end</code>
+								 <p>Which basically draws each laser that’s in the laser array.<br>Lastly, I added a function, a while loop, and some conditional statements to the update page. In the _update() function, I added this to create the delay effect between firing a lot of lasers at a time.</p>
+                                    <code>
+                                    if lastimer > 0 then<br>
+                                    &emsp;&emsp;lastimer -= 1<br>
+                                    &emsp;else<br>
+                                    &emsp;&emsp;lastimer = 0<br>
+                                    &emsp;end<br>
+                                    </code>
+                    
+                                <p>I also added the line</p> <code>if btn(❎) then createlas() end</code>
+								
+								<p>To make the ship “shoot” a laser if the x key is pressed. In order to update the laser’s position, I added this in the _draw() function as well</p>
+                                <code>local i,j=1,1 --properly support deleting items<br>
+                                   &emsp;while(lasers[i]) do<br>
+                                        &emsp;&emsp;&emsp;if lasers[i]:update() then<br>
+                                            &emsp;&emsp;&emsp;&emsp;if(i!=j) lasers[j]=lasers[i] lasers[i]=nil --shifts object if necessary<br>
+                                            &emsp;&emsp;&emsp;&emsp;j+=1<br>
+                                        &emsp;&emsp;&emsp;else lasers[i]=nil end --remove lasers that have died or timed out<br>
+                                            &emsp;&emsp;&emsp;&emsp;i+=1 --go to the next object<br>
+                                    &emsp;&emsp;end
+                                </code>
+								<p> This block of code updates the laser’s position every other frame. I added two new functions outside the _draw() function. The first one is </p> <code>
+                                    function starttimer()<br>
+                                     &emsp; &emsp;lastimer = 30<br>
+                                    &emsp;end<br>
+                                    </code>
+                                <p>This one is pretty self explanatory, it starts the delay timer when it is invoked. The next method is used to create a laser after the button is pressed.</p>
+                    
+                                <code>function createlas()<br>
+                                        &emsp;&emsp;if lastimer == 0 then<br>
+                                          &emsp;&emsp;&emsp;newlaser(p.x,p.y,4,4,0,2)<br>
+                                           &emsp;&emsp;&emsp;starttimer()<br>
+                                       &emsp;&emsp;end<br>
+                                     &emsp;end
+                                    </code><br>
+                    
+								
+								<p>And that’s all! If you press x you should see a laser shoot out of the ship</p>
+                                <img src="images/blog-images/pico8/lasers.gif">
+                        
+								<p> I’m going to end this post here, expect info on the shooting mechanics and the
+									AI movement on the next post! </p>
+
+                    
+				</div>
+			</div>
+        
+        
+        <div class="row">
+			
+				<div class="blog-col">
+					<h3>Novemeber 16th, 2021: aka, the big boom</h3>
 							<p>Hey! Welcome to my new blog! This idea was inspired by the fact that I wanted to make my own little slice of
 								the internet.This first blog post is going to focus on the Pico-8 game I’ve been making on and off for the past
 								 couple of weeks. I wanted to show you guys some of the findings, challenges, and ideas that I’ve seen while
 								 working on this Pico game! Let’s dive in! </p>
 
-								 <br>
 								 <br>
 
 								 <p> I want to start this by explaining what the Pico-8 game engine is. Pico defines itself as a
@@ -52,12 +138,10 @@
 								 special limitations that makes game development on Pico super fun! </p>
 
 								 <br>
-								 <br>
 
 								 <img src="images/blog-images/pico8/welcome_screen.png">
 								 <p>This is what you get when you load up Pico-8</p>
 
-								 <br>
 								 <br>
 
 								 <p>I decided to make a simple game to get some experience with this console because I thought
@@ -69,13 +153,11 @@
 									 made an x and y variable for the player an added some If statements to handle button presses	</p>
 
 								<br>
-								<br>
 
 								<img src="images/blog-images/pico8/button_mappings.png">
 								<p>One of the cool things about Pico is that it proves these buttons that you can get
 									by pressing the shift key and a letter on the keyboard. </p>
 
-								<br>
 								<br>
 
 								<p> Then, in the _draw() function I updated the sprites position. </p>
@@ -83,14 +165,9 @@
 								<p> We have movement! </p>
 
 								<br>
-								<br>
 
 								<p> I’m going to end this post here, expect info on the shooting mechanics and the
 									AI movement on the next post! </p>
-
-
-
-							</p>
 				</div>
 			</div>
 		</section>
